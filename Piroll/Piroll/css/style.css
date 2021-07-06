@@ -134,6 +134,117 @@ ul {
   height: 30px;
 }
 
+.section {
+  margin-top: 115px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.section__title {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.section__text {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  width: 680px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills__left {
+  width: 50%;
+  background-color: #f8f9f9;
+  padding-top: 165px;
+  padding-bottom: 160px;
+}
+
+.skills__title {
+  color: #171717;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.skills__list {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.skills__item {
+  font-weight: 600;
+  font-size: 12px;
+  color: #000000;
+}
+
+.skills__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.skills__skill {
+  margin-bottom: 20px;
+}
+
+.skills__right {
+  width: 50%;
+  background-color: #e9e9e9;
+}
+
+.stats {
+  background-color: #10c9c3;
+}
+
+.stats__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.stats__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stats__body {
+  margin-left: 25px;
+}
+
+.stats__num {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.stats__text {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 @media (max-width: 1169px) {
   .container {
     padding: 0 15px;
@@ -147,6 +258,22 @@ ul {
 
   .header__body {
     margin-right: auto;
+  }
+
+  .skills__left {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .skills__right {
+    display: none;
+  }
+}
+
+@media (max-width: 694px) {
+  .section__text {
+    width: 100%;
   }
 }
 
@@ -187,6 +314,16 @@ ul {
   .nav__img {
     display: block;
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .stats__flex {
+    display: block;
+  }
+
+  .stats__element {
+    margin-top: 20px;
   }
 }
 
