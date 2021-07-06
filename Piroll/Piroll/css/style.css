@@ -245,6 +245,31 @@ ul {
   text-transform: uppercase;
 }
 
+.work__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.work__img {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+}
+
+.work__btn {
+  width: 100%;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  height: 100px;
+  border: none;
+  font-size: 12px;
+  background-color: #f5f5f5;
+}
+
 @media (max-width: 1169px) {
   .container {
     padding: 0 15px;
@@ -268,6 +293,13 @@ ul {
 
   .skills__right {
     display: none;
+  }
+
+  .work__img {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
   }
 }
 
@@ -335,6 +367,15 @@ ul {
 
   .header__text {
     text-align: center;
+  }
+}
+
+@media (max-width: 426px) {
+  .work__img {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
   }
 }
 

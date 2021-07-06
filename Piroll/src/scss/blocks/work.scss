@@ -1,0 +1,32 @@
+.work {
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+  }
+
+  &__img {
+    flex: 25%;
+    max-width: 25%;
+    @media (max-width: 769px) {
+      flex: 50%;
+      max-width: 50%;
+    }
+    @media (max-width: 426px) {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    text-transform: uppercase;
+    color: #8e8e8e;
+    height: 100px;
+    border: none;
+    font-size: 12px;
+    background-color: #f5f5f5;
+  }
+}
