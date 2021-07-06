@@ -1,0 +1,88 @@
+$black: #000000;
+$white: #ffffff;
+$boldGray: #1d1d1d;
+$lightGray: #787878;
+$darkGray: #191919;
+$container: 1170;
+$nunSans: "Nunito Sans";
+$mont: "Montserrat";
+
+.container {
+  max-width: $container + px;
+  margin: 0 auto;
+
+  @media (max-width: 1169px) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: 769px) {
+    max-width: 696px;
+  }
+  @media (max-width: 321px) {
+    max-width: 293px;
+  }
+}
+
+body {
+  line-height: 1;
+  font-family: $mont, sans-serif;
+  height: 100%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  font-size: 12px;
+  height: 55px;
+  padding: 0 45px;
+  text-transform: uppercase;
+  background-color: #10c9c3;
+  border: 0;
+  color: $white;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
