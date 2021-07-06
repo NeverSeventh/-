@@ -1,0 +1,43 @@
+.footer {
+  background-color: #141414;
+  padding: 100px 0;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    color: #bcbcbc;
+  }
+
+  &__block {
+  }
+
+  &__title {
+    font-size: 18px;
+    color: $white;
+  }
+
+  &__text {
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+
+  &__list {
+    & + & {
+      margin-left: 60px;
+    }
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+
+  &__link {
+    color: #bcbcbc;
+  }
+
+  &__lists {
+    display: flex;
+  }
+}

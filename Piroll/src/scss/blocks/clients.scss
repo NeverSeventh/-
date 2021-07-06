@@ -1,0 +1,11 @@
+.clients {
+  padding: 70px 0;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+  }
+}

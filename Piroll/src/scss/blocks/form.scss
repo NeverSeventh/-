@@ -1,0 +1,41 @@
+.form {
+  padding-top: 100px;
+  background-color: #f5f5f5;
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__form {
+    width: 680px;
+    margin: 0 auto;
+    text-align: left;
+    @media (max-width: 768px) {
+      width: auto;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    input {
+      display: block;
+      width: 49% !important;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    border: 0;
+    padding-left: 20px;
+  }
+  textarea {
+    width: 100%;
+    border: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  &__btn {
+  }
+}

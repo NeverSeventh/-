@@ -270,6 +270,201 @@ ul {
   background-color: #f5f5f5;
 }
 
+.video {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.video__video {
+  width: 100%;
+  height: 570px;
+}
+
+.services {
+  background-color: #f5f5f5;
+  padding-top: 105px;
+  padding-bottom: 45px;
+}
+
+.services__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.services__item {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.services__title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.services__text {
+  font-size: 16px;
+  font-family: "Nunito Sans";
+  line-height: 24px;
+  margin-top: 20px;
+  color: #787878;
+}
+
+.reviews {
+  background-color: #10c9c3;
+  text-align: center;
+  padding-top: 170px;
+  padding-bottom: 60px;
+}
+
+.reviews__body {
+  color: #ffffff;
+}
+
+.reviews__text {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.reviews__name {
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.reviews__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 110px;
+}
+
+.reviews__item {
+  height: 6px;
+  width: 6px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+.reviews__item + .reviews__item {
+  margin-left: 10px;
+}
+
+.reviews__item-active {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+}
+
+.clients {
+  padding: 70px 0;
+}
+
+.clients__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form {
+  padding-top: 100px;
+  background-color: #f5f5f5;
+}
+
+.form__wrapper {
+  text-align: center;
+}
+
+.form__form {
+  width: 680px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__item input {
+  display: block;
+  width: 49% !important;
+}
+
+.form__input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 50px;
+  border: 0;
+  padding-left: 20px;
+}
+
+.form textarea {
+  width: 100%;
+  border: 0;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.footer {
+  background-color: #141414;
+  padding: 100px 0;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #bcbcbc;
+}
+
+.footer__title {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer__text:not(:first-child) {
+  margin-top: 15px;
+}
+
+.footer__list + .footer__list {
+  margin-left: 60px;
+}
+
+.footer__item:not(:first-child) {
+  margin-top: 15px;
+}
+
+.footer__link {
+  color: #bcbcbc;
+}
+
+.footer__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width: 1169px) {
   .container {
     padding: 0 15px;
@@ -300,6 +495,29 @@ ul {
         -ms-flex: 50%;
             flex: 50%;
     max-width: 50%;
+  }
+
+  .services__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .services__item {
+    padding: 0;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    margin-top: 20px;
+  }
+
+  .reviews__pagination {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form__form {
+    width: auto;
   }
 }
 
@@ -349,6 +567,15 @@ ul {
   }
 }
 
+@media (max-width: 599px) {
+  .services__item {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 575px) {
   .stats__flex {
     display: block;
@@ -377,10 +604,18 @@ ul {
             flex: 100%;
     max-width: 100%;
   }
+
+  .reviews__text {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 321px) {
   .container {
     max-width: 293px;
+  }
+
+  .reviews__text {
+    font-size: 14px;
   }
 }
