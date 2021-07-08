@@ -1,6 +1,6 @@
 $black: #000000;
 $white: #ffffff;
-
+$orange: #e58f00;
 $container: 1300;
 $nunSans: "Nunito Sans";
 $mont: "Montserrat";
@@ -64,6 +64,10 @@ ul {
 }
 
 .btn {
+  background-color: $orange;
+  padding: 25px 40px;
+  color: #28282d;
+  border: 0;
 }
 
 .hidden {

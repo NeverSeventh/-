@@ -6,9 +6,16 @@
     justify-content: space-between;
     padding-right: 100px;
     padding-left: 20px;
+
+    @media (max-width: 972px) {
+      padding-right: 20px;
+    }
   }
 
   &__block {
+    @media (max-width: 972px) {
+      display: none;
+    }
   }
 
   &__list {
@@ -26,5 +33,15 @@
   }
 
   &__logo {
+  }
+
+  &__img {
+    display: none;
+    @media (max-width: 972px) {
+      display: block;
+      width: 60px;
+      height: 60px;
+      margin-right: 0;
+    }
   }
 }
