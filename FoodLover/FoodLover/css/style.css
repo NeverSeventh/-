@@ -1,0 +1,91 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+body {
+  line-height: 1;
+  font-family: "Alfa Slab One", sans-serif;
+  font-weight: 400;
+  height: 100%;
+  color: #ffffff;
+  background-color: #1d1d23;
+  font-size: 16px;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 100px;
+  padding-left: 20px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__item + .nav__item {
+  margin-left: 55px;
+}
+
+.nav__link {
+  color: #ffffff;
+}

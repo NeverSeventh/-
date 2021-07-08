@@ -1,0 +1,30 @@
+.nav {
+  &__row {
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 20px;
+  }
+
+  &__block {
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    & + & {
+      margin-left: 55px;
+    }
+  }
+
+  &__link {
+    color: $white;
+  }
+
+  &__logo {
+  }
+}

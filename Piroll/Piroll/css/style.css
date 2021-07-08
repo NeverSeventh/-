@@ -527,6 +527,27 @@ ul {
   }
 }
 
+@media (max-width: 683px) {
+  .footer__row {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__block {
+    margin-bottom: 45px;
+  }
+
+  .footer__text {
+    margin-top: 45px;
+  }
+
+  .footer__lists {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 620px) {
   .header {
     padding-top: 0;
