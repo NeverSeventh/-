@@ -1,0 +1,44 @@
+.meal {
+  background-color: $orange;
+  position: relative;
+  padding: 135px 0;
+  margin-top: 250px;
+  &__img {
+    position: absolute;
+    top: -25%;
+    left: 0;
+    @media screen and (max-width: 1777px) {
+      left: -15%;
+    }
+    @media screen and (max-width: 1364px) {
+      left: -25%;
+    }
+    @media screen and (max-width: 1174px) {
+      left: -35%;
+    }
+    @media screen and (max-width: 1043px) {
+      left: -40%;
+    }
+    @media screen and (max-width: 986px) {
+      left: -45%;
+    }
+    @media screen and (max-width: 931px) {
+      left: -50%;
+    }
+    @media screen and (max-width: 886px) {
+      display: none;
+    }
+  }
+
+  &__content {
+    margin: 0 auto;
+
+    width: 500px;
+    @media screen and (max-width: 886px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 523px) {
+      width: auto;
+    }
+  }
+}

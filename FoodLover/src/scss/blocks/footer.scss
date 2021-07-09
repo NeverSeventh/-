@@ -1,0 +1,41 @@
+.footer {
+  background-color: #35353b;
+  padding-top: 120px;
+  padding-bottom: 105px;
+  &__title {
+    text-align: center;
+    font-size: 46px;
+  }
+
+  &__list {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    @media screen and (max-width: 551px) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    margin-top: 40px;
+    margin-bottom: 35px;
+
+    & + & {
+      margin-left: 50px;
+      @media screen and (max-width: 724px) {
+        margin-left: 25px;
+      }
+      @media screen and (max-width: 598px) {
+        margin-left: 15px;
+      }
+      @media screen and (max-width: 551px) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__link {
+    color: $white;
+  }
+}
