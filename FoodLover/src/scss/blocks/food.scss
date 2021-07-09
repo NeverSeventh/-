@@ -1,0 +1,37 @@
+.food {
+  background-image: url("../img/food/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 195px 0;
+
+  &__content {
+    border: 15px solid $orange;
+    background-color: rgba(#141414, 0.8);
+    width: 725px;
+    margin: 0 auto;
+    padding: 75px 100px;
+
+    @media (max-width: 725px) {
+      width: auto;
+    }
+    @media (max-width: 598px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @media (max-width: 321px) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+
+  &__body {
+    text-align: center;
+  }
+
+  &__text {
+    @media (max-width: 598px) {
+      font-size: 16px !important;
+    }
+  }
+}

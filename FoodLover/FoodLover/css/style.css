@@ -214,6 +214,60 @@ ul {
   margin-left: 40px;
 }
 
+.gallery {
+  text-align: center;
+  margin-top: 160px;
+  padding-bottom: 100px;
+}
+
+.gallery__body {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery__column {
+  padding: 0 25px;
+}
+
+.gallery__img {
+  margin-bottom: 30px;
+}
+
+.gallery__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery__btn {
+  display: none;
+}
+
+.food {
+  background-image: url("../img/food/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 195px 0;
+}
+
+.food__content {
+  border: 15px solid #e58f00;
+  background-color: rgba(20, 20, 20, 0.8);
+  width: 725px;
+  margin: 0 auto;
+  padding: 75px 100px;
+}
+
+.food__body {
+  text-align: center;
+}
+
 @media (max-width: 1025px) {
   .aboutUs__row {
     display: block;
@@ -286,12 +340,51 @@ ul {
     margin-right: 60px;
     margin-left: 60px;
   }
+
+  .gallery__body {
+    display: block;
+  }
+
+  .gallery__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 725px) {
+  .food__content {
+    width: auto;
+  }
 }
 
 @media (max-width: 666px) {
   .aboutUs__img img {
     max-width: 100%;
     height: auto;
+  }
+}
+
+@media (max-width: 603px) {
+  .gallery__column {
+    display: block;
+  }
+}
+
+@media (max-width: 598px) {
+  .food__content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .food__text {
+    font-size: 16px !important;
   }
 }
 
@@ -303,10 +396,23 @@ ul {
   .aboutUs__img img {
     display: none;
   }
+
+  .gallery__img--hide {
+    display: none;
+  }
+
+  .gallery__btn {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 321px) {
   .section__text {
     font-size: 16px;
+  }
+
+  .food__content {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
