@@ -1,0 +1,63 @@
+.quality {
+  position: relative;
+  background-image: url("../img/quality/bg.png");
+  height: 1693px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 350px;
+  background-size: 120% 100%;
+  margin-bottom: 60px;
+  @media (max-width: 769px) {
+    background-image: none;
+    background-color: $orange;
+    text-align: center;
+    height: auto;
+    padding-bottom: 200px;
+  }
+
+  &__img {
+    position: absolute;
+    @media (max-width: 769px) {
+      display: none;
+    }
+    &--1 {
+      left: 0;
+      bottom: 50px;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__img--1 {
+  }
+
+  &__img--2 {
+    right: 0;
+    top: 700px;
+    @media (max-width: 1025px) {
+      width: 50%;
+      height: 50%;
+      top: 800px;
+    }
+  }
+
+  &__img--3 {
+    top: -100px;
+    right: 0;
+  }
+
+  &__body {
+    width: 400px;
+    margin-left: 40px;
+    @media (max-width: 769px) {
+      width: auto;
+      margin-right: 60px;
+      margin-left: 60px;
+    }
+  }
+
+  &__text {
+  }
+}
+.container {
+}
