@@ -1,0 +1,23 @@
+.nav {
+  &__list {
+    display: flex;
+    @media screen and (max-width: 778px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    & + & {
+      margin-left: 50px;
+      @media screen and (max-width: 957px) {
+        margin-left: 25px;
+      }
+      @media screen and (max-width: 836px) {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &__link {
+  }
+}

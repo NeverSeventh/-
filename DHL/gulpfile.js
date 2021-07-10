@@ -72,6 +72,11 @@ function img() {
         .pipe(dest(path.build.img))
 }
 
+function fonts() {
+    return src.src(path.src.fonts)
+        .pipe(dest(path.build.fonts))
+}
+
 function watchFiles() {
     gulp.watch([path.watch.html], html)
     gulp.watch([path.watch.css], css);

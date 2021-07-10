@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>DHL</title>
-</head>
-
-<body>
-    <header class="header">
+<header class="header">
     <div class="header__wrapper header__wrapper--red">
         <div class="container header__header">
         <span class="header__lang"><a href="#">English</a> </span>
@@ -24,16 +12,7 @@
     <div class="header__wrapper header__wrapper--yellow">
         <div class="container header__menu"> 
         <div class="header__logo"><img src="./img/header/logo.png" alt="logo"></div>
-        <nav class="nav">
-    <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">express</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">parcel & ecommerce</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">logistics</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">mail</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">press</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">about</a></li>
-    </ul>
-</nav>
+        @@include('./_nav.html')
         <div class="header__search"><img src="./img/header/search.png" alt=""></div>
     </div>
     </div>
@@ -55,6 +34,3 @@
     <div class="header__gradient"></div>
     </div>
 </header>
-</body>
-
-</html>
